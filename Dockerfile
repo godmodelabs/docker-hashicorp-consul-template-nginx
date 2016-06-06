@@ -13,4 +13,4 @@ RUN echo "${SHA256}  ${TOOL}_${VERSION}_linux_amd64.zip" | sha256sum -cw &&\
 ADD root .
 
 ENTRYPOINT ["/consul-template"]
-CMD ["-config=/etc/consul-template/config.json
+CMD ["-config=/etc/consul-template/config.json"]
