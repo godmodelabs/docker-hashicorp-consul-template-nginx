@@ -1,0 +1,5 @@
+template {
+  source = "/etc/consul-template/nginx.ctmpl"
+  destination = "/etc/nginx/nginx.conf"
+  command = "nginx -s reload &"
+}
